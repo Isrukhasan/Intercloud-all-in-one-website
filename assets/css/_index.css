@@ -1,0 +1,228 @@
+/* Index Media Query*/
+@media only screen and(max-width: 576px) {
+  #bc img {
+    width: 30px;
+  }
+  .cloud-text p {
+    font-size: 14px !important;
+  }
+}
+
+@media only screen and (min-width:876px){
+  .nav-item{
+    margin-left:25px;
+    font-size:18px;
+    
+  }
+  .navbar .nav-link:hover{
+    color: #fb7066 !important;;
+    
+  }
+  .far {
+    font-size:24px!important;
+  }
+}
+
+/* Color Pallete */
+
+:root {
+  --primary-color: #1a3954;
+  --scondary-color: #fb7066;
+  --third-color: #ffcbcb;
+  --thrid-shade: #87d7e2;
+  --text-color: #bcbcbc;
+  --font:"Hind Vadodara", sans-serif;
+}
+nav,body,
+.NAV {
+  background-color: #1a3954 !important;
+}
+.nav-item{
+  font-family:var(--font) ;
+}
+ul#menu li {
+  display: inline;
+  float: right;
+  color: white;
+  padding-right: 15px;
+  padding-top: 5px;
+ 
+}
+ul#menu li a{
+  font-size: 15px;
+}
+ul#menu li a:hover {
+  color: #fb7066 !important;
+  
+}
+h6 {
+  color: #bcbcbc;
+}
+
+.button {
+  border-radius: 30px;
+  background-color: var(--scondary-color) !important;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: "Hind Vadodara", sans-serif;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.2s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.mask {
+  display: flex;
+  height: 95vh;
+  align-items: center;
+}
+
+#introCarousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+  height: 89vh;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-item:nth-child(1) {
+  /*    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');*/
+  background-color: #1a3954;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(2) {
+  /*    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');*/
+  background-color: #1a3954;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(3) {
+  /*    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');*/
+  background-color: #1a3954;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-item:nth-child(4) {
+  /*    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');*/
+  background-color: #1a3954;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-item:nth-child(5) {
+  /*    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');*/
+  background-color: #1a3954;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-item:nth-child(6) {
+  /*    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');*/
+  background-color: #1a3954;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+  bc h6 {
+    color: white;
+  }
+  .icons {
+    gap: 35px;
+  }
+  #introCarousel {
+    margin-top: 0px;
+  }
+  .cloud-image img {
+    max-width: 250px;
+  }
+}
+.cloud-image {
+  align-items: center;
+}
+.navbar .nav-link {
+  color: #fff !important;
+}
+.carousel-container {
+  display: flex;
+}
+.cloud-image {
+  display: flex;
+  justify-content: flex-end;
+}
+.cloud-text {
+  text-align: right;
+}
+.cloud-text p {
+  max-width: 672px;
+  float: right;
+  color: var(--text-color);
+  font-size: 21px;
+}
+.icons {
+  display: flex;
+  justify-content: flex-end;
+}
+.bc {
+  display: flex;
+  justify-content: space-around;
+}
+/* ======================= */
+/*  Mobile Media Query */
+/* ======================= */
+@media only screen and (max-width: 600px) {
+  .cloud-image img{
+    width:50%;
+  }
+  .cloud-text p{
+    font-size: 14px;
+  }
+  #bc>.img-fluid{
+    max-width:50%;
+  }
+  #bc>h6{
+    font-size: 11px;
+  }
+  carousel-indicators{
+    display: none;
+  }
+}
